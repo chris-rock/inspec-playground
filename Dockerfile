@@ -23,3 +23,6 @@ RUN terraform --version
 RUN curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py | python
 RUN pip install awscli --upgrade --user
 ENV PATH="~/.local/bin:${PATH}"
+
+# Install VIM
+RUN yum install -y vim
